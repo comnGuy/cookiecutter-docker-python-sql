@@ -1,0 +1,9 @@
+{
+    "container_name": "user-handler",
+    "port": 3000,
+    "database_name": "user-db",
+    "user_db": "user",
+    "database_name_db": "user",
+    "password_db": "password",
+    "port_db": 3307
+}
