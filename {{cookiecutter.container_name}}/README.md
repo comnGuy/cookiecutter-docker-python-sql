@@ -36,5 +36,5 @@ Add the following lines to docker-compose
       - {{cookiecutter.database_name}}
     # LOCAL TESTING
     ports:
-      - 3000:3000
+      - {{cookiecutter.port_db}}:{{cookiecutter.port_db}}
 ```
