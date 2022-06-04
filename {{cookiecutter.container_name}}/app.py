@@ -11,7 +11,7 @@ from models.db import initialize_db
 TRACKING_DB = getenv('TRACKING_DB', '127.0.0.1:{{cookiecutter.port_db}}/')
 USER_DB = getenv('USER_DB', '{{cookiecutter.user_db}}')
 PASSWORD_DB = getenv('PASSWORD_DB', '{{cookiecutter.password_db}}')
-DATABASE_DB = getenv('DATABASE_DB', '{{cookiecutter.database_name}}')
+DATABASE_DB = getenv('DATABASE_DB', '{{cookiecutter.database_name_db}}')
 
 initialize_db(db_url=TRACKING_DB, database_name=DATABASE_DB,
               user_db=USER_DB, password_db=PASSWORD_DB)
