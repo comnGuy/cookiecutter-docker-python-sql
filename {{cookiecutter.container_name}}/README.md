@@ -6,7 +6,7 @@
 
 _Warning_
 
-- `{{cookiecutter.database_name}}` have to run.
+- `{{cookiecutter.database_container_name}}` have to run.
 
 ## Python
 
@@ -15,7 +15,7 @@ _Warning_
 
 _Warning_
 
-- `{{cookiecutter.database_name}}` have to run.
+- `{{cookiecutter.database_container_name}}` have to run.
 
 ### Docker-compose
 
@@ -32,8 +32,6 @@ Add the following lines to docker-compose
       - ./{{cookiecutter.container_name}}/:/app
     env_file:
       - ./_env/{{cookiecutter.container_name}}.env
-    depends_on:
-      - {{cookiecutter.database_name}}
     # LOCAL TESTING
     ports:
       - {{cookiecutter.port_db}}:{{cookiecutter.port_db}}
