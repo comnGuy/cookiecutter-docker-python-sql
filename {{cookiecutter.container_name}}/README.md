@@ -34,5 +34,5 @@ Add the following lines to docker-compose
       - ./_env/{{cookiecutter.container_name}}.env
     # LOCAL TESTING
     ports:
-      - {{cookiecutter.port_db}}:{{cookiecutter.port_db}}
+      - {{cookiecutter.port}}:{{cookiecutter.port}}
 ```
